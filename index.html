@@ -1,1 +1,257 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Psychoinformatics Congress 2017, University of Siegen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+    
+    body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+    }
+    /* Full height image header */
+    
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/tablet_pen.jpg");
+      min-height: 100%;
+    }
+    
+    .w3-navbar li a {
+      padding: 16px;
+      float: left;
+    }
+  </style>
+</head>
+
+<body id="home">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <ul class="w3-navbar">
+      <li> <a href="#home" class="w3-wide">HOME</a> </li>
+      <!-- Float links to the right -->
+      <li class="w3-right w3-hide-small"> <a href="#about">ABOUT</a> <a href="#team">TEAM</a> <a href="#work">WORK</a>‚ <a href="#contact">CONTACT</a> </li>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <li>
+        <a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars w3-padding-right w3-padding-left"></i> </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Sidenav on small screens when clicking the menu icon -->
+  <nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav"> <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a> <a href="#about" onclick="w3_close()">ABOUT</a> <a href="#team" onclick="w3_close()">TEAM</a> <a href="#work" onclick="w3_close()">WORK</a> <a>‚onclick="w3_close()">CONTACT</a> </nav>
+  <!-- Header with full-height image -->
+  <header class="img-1 w3-display-container w3-grayscale-min">
+    <div class="w3-display-top w3-padding-xlarge w3-text-black mainImage"> 
+      <img style="width: 100%;" src="/assets/logo.jpg" alt="Logo" /> 
+      <!--<span class="w3-jumbo w3-hide-small">Some Title Congress 2017</span>
+      <br> 
+      <span class="w3-large">University of Siegen, Germany</span>
+      <p><a href="#about" class="w3-btn w3-padding-large w3-large">Learn more and participate</a></p>-->
+    </div>
+  </header>
+  <!-- About Section -->
+  <div class="w3-container w3-padding-0" id="about">
+    <h3 class="w3-center">ABOUT THE CONGRESS</h3>
+    <p class="w3-center w3-large">What you need to know</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter"> <i class="fa icon-desktop icon-5x"></i>
+        <p class="w3-large">What is Psychoinformatics?</p>
+        <p>Duis nisi nisi, commodo vel lectus vel, varius finibus velit. Proin tincidunt odio ut est sollicitudin accumsan. Ut elit nulla, molestie a dapibus in, bibendum eu nulla. In sollicitudin, massa in mattis cursus, libero urna tincidunt nibh, dignissim viverra diam orci a diam.</p>
+      </div>
+      <div class="w3-quarter"> <i class="fa icon-group icon-5x"></i>
+        <p class="w3-large">The Conference</p>
+        <p class="miniInfo">Nullam consectetur tincidunt tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin odio lectus, varius at auctor sed, convallis ac justo. Integer ornare erat id mauris fringilla finibus nec eu ante.</p>
+      </div>
+      <div class="w3-quarter"> <i class="icon-file icon-5x"></i>
+        <p class="w3-large">Call for papers</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-quarter"> <i class="icon-calendar icon-5x"></i>
+        <p class="w3-large">Date</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Team Section -->
+  <div class="w3-container w3-light-grey w3-padding-64" id="team">
+    <h3 class="w3-center">THE HOSTS</h3>
+    <p class="w3-center w3-large">Chair of Media Psychology, Prof. Dr. Angela Schorr</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card-2"> <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Prof. Dr. Angela Schorr</h3>
+            <p class="w3-opacity">Owner of Chair</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p>
+              <button class="w3-btn-block">Contact</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card-2"> <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Jane Doe</h3>
+            <p class="w3-opacity">Art Director</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p>
+              <button class="w3-btn-block">Contact</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card-2"> <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Mike Ross</h3>
+            <p class="w3-opacity">Web Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p>
+              <button class="w3-btn-block">Contact</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card-2"> <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+          <div class="w3-container">
+            <h3>Dan Star</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p>
+              <button class="w3-btn-block">Contact</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Work Section -->
+  <div class="w3-container w3-padding-128" id="work">
+    <h3 class="w3-center">OUR WORK</h3>
+    <p class="w3-center w3-large">What we've done for people</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col m3"> <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains"> </div>
+      <div class="w3-col m3"> <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans"> </div>
+      <div class="w3-col m3"> <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup"> </div>
+      <div class="w3-col m3"> <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean"> </div>
+    </div>
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col m3"> <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist"> </div>
+      <div class="w3-col m3"> <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter"> </div>
+      <div class="w3-col m3"> <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train"> </div>
+      <div class="w3-col m3"> <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing"> </div>
+    </div>
+  </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'"> <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"> <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-128 w3-light-grey" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-half">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Siegen, Germany</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Phone: +00 151515</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>Email: mail@mail.com</p>
+        <br>
+        <input class="w3-input w3-border" type="text" placeholder="Name">
+        <input class="w3-input w3-border w3-section" type="text" placeholder="Email">
+        <input class="w3-input w3-border w3-section" type="text" placeholder="Subject">
+        <input class="w3-input w3-border w3-section" type="text" placeholder="Comment">
+        <button class="w3-btn w3-section"> <i class="fa fa-paper-plane"></i> SEND MESSAGE </button>
+      </div>
+      <div class="w3-half">
+        <!-- Add Google Maps -->
+        <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <div class="w3-xlarge"> <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a> <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a> <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a> <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a> <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a> <a href="#home" class="w3-hover-text-red" title="Go to top"><i class="fa fa-arrow-up"></i></a> </div>
+    <p>Created by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Riko Kelter</a></p>
+  </footer>
+  <!-- Add Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    <!-- Google Map Location -->
+    var myCenter = new google.maps.LatLng(50.9061961,8.0263469);
+
+    function initialize() {
+      var mapProp = {
+        center: myCenter
+        , zoom: 12
+        , scrollwheel: false
+        , draggable: false
+        , mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      var marker = new google.maps.Marker({
+        position: myCenter
+      , });
+      marker.setMap(map);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    // Change style of navbar on scroll
+    window.onscroll = function () {
+      myFunction()
+    };
+
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+      }
+      else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-black", "");
+      }
+    }
+    // Toggle between showing and hiding the sidenav when clicking the menu icon
+    var mySidenav = document.getElementById("mySidenav");
+
+    function w3_open() {
+      if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+      }
+      else {
+        mySidenav.style.display = 'block';
+      }
+    }
+    // Close the sidenav with the close button
+    function w3_close() {
+      mySidenav.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
+

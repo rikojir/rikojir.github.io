@@ -1,0 +1,19 @@
+/** {
+  border: 1px solid black;
+}*/
+
+#home {
+  border: 1px solid white;
+}
+
+.mainImage {
+  margin-top: 60px;
+}
+
+.miniInfo {
+  text-align: left;
+}
+
+.w3-navbar {
+  background-color: rgba(68, 68, 68, 0.9);
+}
