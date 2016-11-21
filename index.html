@@ -14,7 +14,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     .mainImage {
-      margin-top: 60px;
+      margin-top: 50px;
     }
 
     .miniInfo {
@@ -57,13 +57,13 @@
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
       width: 100%;
-      height: 300px;
+      max-height: 350px;
       margin: auto;
     }
     
     .myCarousel {
       width: 100%;
-      height: 350px;
+      max-height: 350px;
     }
   </style>
 </head>
@@ -97,8 +97,8 @@
     <!--<a href="#contact" onclick="w3_close()">CONTACT</a>-->
    </nav>
   <!-- Header with full-height image -->
-  <header class="img-1 w3-display-container w3-grayscale-min">
-    <div class="w3-display-top w3-padding-xlarge w3-text-black mainImage">
+  <!--<header class="img-1 w3-display-container w3-grayscale-min">-->
+    <div class="w3-display-top w3-text-black mainImage">
       <!--<img style="width: 100%;" src="/assets/logo.jpg" alt="Logo" />-->
       <!--<span class="w3-jumbo w3-hide-small">Some Title Congress 2017</span>
       <br>
@@ -151,7 +151,7 @@
         </div>
       </div>
     </div>
-  </header>
+  <!--</header>-->
 <body>
   
   <br>
@@ -319,22 +319,6 @@
     function w3_close() {
       mySidenav.style.display = "none";
     }
-    
-    
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"; 
-        }
-        slideIndex++;
-        if (slideIndex> slides.length) {slideIndex = 1} 
-        slides[slideIndex-1].style.display = "block"; 
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
-    }
-    
-    var slideIndex = 0;
-    showSlides();
   </script>
 </body>
 
